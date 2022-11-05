@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.bc46ddd9.js",
+    "main.js": "/BuildingPrice/static/js/main.d0f227ca.js",
     "index.html": "/BuildingPrice/index.html",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.bc46ddd9.js.map": "/BuildingPrice/static/js/main.bc46ddd9.js.map"
+    "main.d0f227ca.js.map": "/BuildingPrice/static/js/main.d0f227ca.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.bc46ddd9.js"
+    "static/js/main.d0f227ca.js"
   ]
 }
