@@ -1,17 +1,26 @@
-import { NavigationList, NavigationItem } from './NavigationSection.styled';
+/* import { NavigationList, NavigationItem } from './NavigationSection.styled'; */
 
 const Navigation = () => {
-
   return (
-    <NavigationList>
+    <>
+      {/* <NavigationList>
       <NavigationItem>Menu </NavigationItem>
-      <NavigationItem>Wydarzenia </NavigationItem> {/* EVENTS */}
-      <NavigationItem>Rozrywky </NavigationItem> {/* GAMES */}
-      <NavigationItem>Opinie </NavigationItem> {/* FEEDBACKS */}
-      <NavigationItem>Galeria </NavigationItem> {/* GALLERY */}
-      <NavigationItem>jak nas znaleźć </NavigationItem> {/* HOW TO FIND US */}
-      <NavigationItem>Sprawdź</NavigationItem> {/*  MAKE ORDER */}
-    </NavigationList>
+      <NavigationItem>Wydarzenia </NavigationItem> 
+      <NavigationItem>Rozrywky </NavigationItem> 
+      <NavigationItem>Opinie </NavigationItem> 
+      <NavigationItem>Galeria </NavigationItem> 
+      <NavigationItem>jak nas znaleźć </NavigationItem> 
+      <NavigationItem>Sprawdź</NavigationItem> 
+    </NavigationList> */}
+      <ul>
+        <li>Головна</li>
+        <li>Послуги ФОП</li>
+        <li>Послуги юр. особи</li>
+        <li>Питання</li>
+        <li>Наша команда</li>
+        <li>Кошик</li>
+      </ul>
+    </>
   );
 };
 

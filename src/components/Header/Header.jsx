@@ -1,15 +1,20 @@
 import Navigation from './Navigation/NavigationSection';
 import ThemeButton from './ThemeChange/ThemeButton';
-import { AdditionalNavigation, Logo, UserMenu, HeaderContainer } from './Header.styled';
+/* import {
+  AdditionalNavigation,
+  Logo,
+  UserMenu,
+  HeaderContainer,
+} from './Header.styled'; */
 import { LanguegeButton } from './LanguegeButton';
-import Burger from './Navigation/Burger/Burger';
-import Menu from './Navigation/Menu/Menu';
+/* import Burger from './Navigation/Burger/Burger';
+import Menu from './Navigation/Menu/Menu'; */
 import React, { useState, useRef } from 'react';
-import { useMediaQuery } from 'react-responsive';
+/* import { useMediaQuery } from 'react-responsive'; */
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 
 const Header = () => {
-  const isTab = useMediaQuery({ query: '(min-width: 768px)' });
+  /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -21,13 +26,25 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer>
+    <div>
+      <a href=" ">LOGO</a>
+      <h1>NAME</h1>
+      <h4>TOPIC</h4>
+      <Navigation />
+      <ThemeButton
+        isDarkTheme={isDarkTheme}
+        handleChangeTheme={handleChangeTheme}
+      />
+      <LanguegeButton />
+      <button>Кошик</button>
+
+      {/* <HeaderContainer>
       <AdditionalNavigation>
         <a href="logo">
           LOGO
           {/* <span>
             <Logo src={logo} alt="Drewutnia" />
-          </span> */}
+          </span> *
         </a>
         <UserMenu>
           <ThemeButton
@@ -48,7 +65,8 @@ const Header = () => {
           </div>
         </>
       )}
-    </HeaderContainer>
+    </HeaderContainer> */}
+    </div>
   );
 };
 

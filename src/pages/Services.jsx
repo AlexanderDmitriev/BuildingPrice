@@ -1,0 +1,35 @@
+export const Services = () => {
+  return (
+    <>
+      <ul>
+        <li>
+          <h2>item</h2>
+          <ul>
+            <li>subitem1</li>
+            <li>subitem2</li>
+          </ul>
+          <p>Price</p>
+          <button>Add</button>
+        </li>
+        <li>
+          <h2>item</h2>
+          <ul>
+            <li>subitem1</li>
+            <li>subitem2</li>
+          </ul>
+          <p>Price</p>
+          <button>Add</button>
+        </li>
+        <li>
+          <h2>item</h2>
+          <ul>
+            <li>subitem1</li>
+            <li>subitem2</li>
+          </ul>
+          <p>Price</p>
+          <button>Add</button>
+        </li>
+      </ul>
+    </>
+  );
+};
