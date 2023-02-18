@@ -33,6 +33,7 @@ export const Basket = () => {
           <button>delete</button>
         </li>
       </ul>
+      <p>Sum</p>
       <button>Submit</button>
     </>
   );

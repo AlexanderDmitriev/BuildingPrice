@@ -1,7 +1,6 @@
 export const Footer = () => {
   return (
     <>
-      <a href=" ">LOGO</a>
       <ul>
         <li>tel1</li>
         <li>tel2</li>

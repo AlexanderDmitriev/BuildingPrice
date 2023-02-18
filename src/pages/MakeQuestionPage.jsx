@@ -1,4 +1,4 @@
-export const MakeQuestion = () => {
+export const MakeQuestionPage = () => {
   return (
     <>
       <form action="">

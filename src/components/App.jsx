@@ -7,7 +7,7 @@ import Header from './Header/Header';
 import { HomePage } from '../pages/HomePage';
 import { Footer } from './Footer/Footer';
 import {Services} from '../pages/Services';
-import {MakeQuestion} from '../pages/MakeQuestionPage';
+import {MakeQuestionPage} from '../pages/MakeQuestionPage';
 import {OurTeamPage} from '../pages/OurTeamPage';
 import {Basket} from '../pages/Basket';
 import {NotFoundPage} from '../pages/NotFoundPage';
@@ -25,7 +25,7 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/fop" element={<Services />} />
           <Route path="/ooo" element={<Services />} />
-          <Route path="/question" element={<MakeQuestion />} />
+          <Route path="/questions" element={<MakeQuestionPage />} />
           <Route path="/team" element={<OurTeamPage />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/*" element={<NotFoundPage />} />

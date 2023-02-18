@@ -1,44 +1,27 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const NavigationList = styled.ul`
-  padding-left: 22px;
-  padding-right: 20px;
   list-style: none;
-  margin: 0;
-  display: block;
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  @media screen and (min-width: 1280px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  display: flex;
+  align-items: center;
 `;
 
-export const NavigationItem = styled.li`
-  font-family: 'Abril Fatface', cursive;
-  text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  color: #fff;
+export const ServicesLink = styled(NavLink)`
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  color: #191924;
   cursor: pointer;
-  padding: 6px 22px;
-  @media screen and (min-width: 768px) and (max-width: 968px) {
-    font-size: 12px;
-  }
-
+  text-align: center;
+  padding: 6px 12px;
   transition-property: color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: linear;
-
   &:hover,
   &:focus {
-    color: red;
-    box-shadow: 1px 1px 5px var(--company-color);
+    color: green;
   }
 `;

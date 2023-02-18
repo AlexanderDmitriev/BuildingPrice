@@ -1,26 +1,16 @@
-/* import { NavigationList, NavigationItem } from './NavigationSection.styled'; */
+import { NavigationList,ServicesLink } from './NavigationSection.styled';
 
 const Navigation = () => {
   return (
-    <>
-      {/* <NavigationList>
-      <NavigationItem>Menu </NavigationItem>
-      <NavigationItem>Wydarzenia </NavigationItem> 
-      <NavigationItem>Rozrywky </NavigationItem> 
-      <NavigationItem>Opinie </NavigationItem> 
-      <NavigationItem>Galeria </NavigationItem> 
-      <NavigationItem>jak nas znaleźć </NavigationItem> 
-      <NavigationItem>Sprawdź</NavigationItem> 
-    </NavigationList> */}
-      <ul>
-        <li>Головна</li>
-        <li>Послуги ФОП</li>
-        <li>Послуги юр. особи</li>
-        <li>Питання</li>
-        <li>Наша команда</li>
-        <li>Кошик</li>
-      </ul>
-    </>
+    <nav>
+      <NavigationList>
+        <li><ServicesLink to="/">На головну</ServicesLink></li>
+        <li><ServicesLink to="/fop">Послуги ФОП</ServicesLink></li>
+        <li><ServicesLink to="/ooo">Послуги юр. особам</ServicesLink></li>
+        <li><ServicesLink to="/questions">Питання</ServicesLink></li>
+        <li><ServicesLink to="/team">Наша команда</ServicesLink></li>
+      </NavigationList>
+    </nav>
   );
 };
 
