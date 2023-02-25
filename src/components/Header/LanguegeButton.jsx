@@ -11,13 +11,19 @@ export const LanguegeButton = () => {
     { value: 'pl', label: 'PL' },
   ];
 
+  const selectLanguegeHandler = event => {
+    console.log(event.value);
+    setSelectedOption(event.value);
+  };
+
   return (
     <>
       <SelectLanguege
         defaultValue={selectedOption | { value: 'ua', label: 'UA' }}
-        onChange={setSelectedOption}
+        onChange={selectLanguegeHandler}
         options={options}
         placeholder={'UA'}
+        
       />
     </>
   );

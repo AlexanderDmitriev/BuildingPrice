@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Select from 'react-select';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 export const HeaderSection = styled.header`
   position: fixed;
@@ -31,7 +31,7 @@ export const AdditionalNavigation = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  & li:not(:last-child){
+  & li:not(:last-child) {
     margin-right: 15px;
   }
 `;
@@ -39,10 +39,12 @@ export const AdditionalNavigation = styled.ul`
 export const Logo = styled.img`
   height: 65px;
 `;
-
-export const BasketLink = styled(NavLink)`
-  
+export const BasketLogo = styled.img`
+  height: 24px;
+  color: green;
 `;
+
+export const BasketLink = styled(NavLink)``;
 
 //////////////////////////////////////////
 export const UserMenu = styled.div`
@@ -52,6 +54,32 @@ export const UserMenu = styled.div`
 `;
 
 export const SelectLanguege = styled(Select)`
-  width: 85px;
-  border: none;
+  width: 57px;
+  
+  .css-13cymwt-control,
+  .css-t3ipsp-control {
+    border: none;
+    font-family: 'Inter' serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    align-items: center;
+    color: #191924;
+    cursor: pointer;
+  }
+  .css-1u9des2-indicatorSeparator {
+    width: 0;
+  }
+  .css-1jqq78o-placeholder {
+    color: #191924;
+  }
+  .css-1xc3v61-indicatorContainer,
+  .css-15lsz6c-indicatorContainer{
+    color: #191924;
+    padding: 0;
+  }
+  .css-1fdsijx-ValueContainer{
+    padding:0;
+  }
 `;

@@ -9,9 +9,9 @@ export const NavigationList = styled.ul`
 
 export const ServicesLink = styled(NavLink)`
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter' serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 110%;
   color: #191924;
   cursor: pointer;

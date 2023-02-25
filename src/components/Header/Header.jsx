@@ -6,6 +6,7 @@ import {
   AdditionalNavigation,
   HeaderContainer,
   Logo,
+  BasketLogo,
   BasketLink,
 } from './Header.styled';
 import { LanguegeButton } from './LanguegeButton';
@@ -14,8 +15,11 @@ import Menu from './Navigation/Menu/Menu'; */
 import React, { useState, useRef } from 'react';
 /* import { useMediaQuery } from 'react-responsive'; */
 import { useOnClickOutside } from './Navigation/Burger/hooks';
-import sargonikaLogo from '../../images/SargonikaLogoUa.jpg';
+/* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
 import { NavLink } from 'react-router-dom';
+/* import logo from '../../images/Logo.svg'; */
+import logo2 from '../../images/sargonikaUaLogo.jpg';
+import basketLogo from '../../images/cart.svg';
 
 const Header = () => {
   /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
@@ -27,6 +31,7 @@ const Header = () => {
 
   const handleChangeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
+    console.log(isOpen);
   };
 
   return (
@@ -35,7 +40,7 @@ const Header = () => {
         <HeaderBody>
           <NavLink to="/">
             <span>
-              <Logo src={sargonikaLogo} alt="sargonika-ukraine" />
+              <Logo src={logo2} alt="sargonika-ukraine" />
             </span>
           </NavLink>
           <Navigation />
@@ -50,7 +55,14 @@ const Header = () => {
               <LanguegeButton />
             </li>
             <li>
-              <BasketLink to="/basket">До кошика</BasketLink>
+              <BasketLink to="/basket">
+                <span>
+                  {/* <BasketLogo width="24" height="24">
+                    <use src={basketLogo}></use>
+                  </BasketLogo> */}
+                  <BasketLogo src={basketLogo} alt="basket" />
+                </span>
+              </BasketLink>
             </li>
           </AdditionalNavigation>
         </HeaderBody>
