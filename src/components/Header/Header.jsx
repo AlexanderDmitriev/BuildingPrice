@@ -21,6 +21,7 @@ import { NavLink } from 'react-router-dom';
 import logo2 from '../../images/sargonikaUaLogo.jpg';
 import basketLogo from '../../images/cart.svg';
 
+
 const Header = () => {
   /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
   const [isOpen, setIsOpen] = useState(false);

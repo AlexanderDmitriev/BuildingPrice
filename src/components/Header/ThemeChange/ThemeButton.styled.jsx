@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import Switch from 'react-switch';
 
-export const ThemeButtonCustom = styled.button`
-  border-radius: 50%;
+
+
+export const ThemeButtonCustom = styled(Switch)`
+  border: 2px solid #95E2E9;
+border-radius: 40px;
   /* border: none;
   background-color: transparent;
   cursor: pointer;
