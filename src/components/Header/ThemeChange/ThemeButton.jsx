@@ -1,7 +1,6 @@
 import React from 'react';
 /* import { MdDarkMode, MdWbSunny } from 'react-icons/md'; */
 import { ThemeButtonCustom } from './ThemeButton.styled';
-import Switch from 'react-switch';
 import styled from 'styled-components';
 
 const ThemeButton = ({ isDarkTheme, handleChangeTheme }) => {
@@ -26,8 +25,8 @@ const ThemeButton = ({ isDarkTheme, handleChangeTheme }) => {
         <ThemeButtonCustom
           onChange={handleChangeTheme}
           checked={isDarkTheme}
-          offColor={'transparent'}
-          onColor={'transparent'}
+          offColor={'#fff'}
+          onColor={'#fff'}
           onHandleColor={'#000'}
           offHandleColor={'#000'}
           checkedIcon={false}

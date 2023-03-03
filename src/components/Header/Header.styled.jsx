@@ -20,10 +20,10 @@ export const HeaderBody = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
   padding: 10px;
-  box-shadow: 0px 5px 3px rgba(9, 30, 63, 0.1);
+  /* box-shadow: 0px 5px 3px rgba(9, 30, 63, 0.1); */
 `;
 
 export const AdditionalNavigation = styled.ul`

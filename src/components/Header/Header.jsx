@@ -12,7 +12,7 @@ import {
 import { LanguegeButton } from './LanguegeButton';
 /* import Burger from './Navigation/Burger/Burger';
 import Menu from './Navigation/Menu/Menu'; */
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 /* import { useMediaQuery } from 'react-responsive'; */
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 /* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
@@ -26,14 +26,19 @@ const Header = () => {
   /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState('light');
 
   const node = useRef();
   useOnClickOutside(node, () => setIsOpen(false));
 
   const handleChangeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-    console.log(isOpen);
+    console.log(isDarkTheme);
   };
+useEffect(()=>{
+   isDarkTheme?setCurrentTheme('dark'):setCurrentTheme('light');
+   console.log(currentTheme);
+},[isDarkTheme]);
 
   return (
     <HeaderSection>

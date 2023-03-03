@@ -1,22 +1,16 @@
-import styled from 'styled-components';
-
-const TempContainer = styled.div`
-  padding-top: 60px;
-`;
+import {
+  TempContainer,
+  CoolSlogans,
+  Back1,
+  MainSlogan,
+} from '../components/Home/HomePage.styled';
 
 export const HomePage = () => {
   return (
-    <TempContainer>
-      <h1>NAME</h1>
-      <h4>TOPIC</h4>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae tenetur
-        sapiente similique possimus aliquid illo! Dignissimos atque sunt
-        excepturi magnam repudiandae qui eaque non exercitationem dolorum iste
-        beatae corrupti aspernatur asperiores nemo unde impedit, quidem nulla
-        maiores eius, a sapiente aliquam deleniti vitae numquam. Quam vitae
-        adipisci sit quibusdam doloribus earum odit asperiores illum!
-      </p>
-    </TempContainer>
+    <>
+      <MainSlogan>Ми працюємо для вас</MainSlogan>
+      <CoolSlogans>якийсь слоган</CoolSlogans>
+      <button>Дізнатися більше</button>
+    </>
   );
 };

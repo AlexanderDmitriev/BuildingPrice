@@ -3,7 +3,7 @@ export const OurTeamPage = () => {
     <>
       <ul>
         <li>
-          <img src="" alt="photo" />
+          <img src="" alt="photo1" />
           <h3>Name</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum at
@@ -12,7 +12,7 @@ export const OurTeamPage = () => {
           <p>Experience</p>
         </li>
         <li>
-          <img src="" alt="photo" />
+          <img src="" alt="photo2" />
           <h3>Name</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum at

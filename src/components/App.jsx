@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { theme } from './theme';
+import { theme, light, dark } from './theme';
 import { GlobalStyles } from './global';
 import { /* lazy, */ Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -11,15 +11,16 @@ import {MakeQuestionPage} from '../pages/MakeQuestionPage';
 import {OurTeamPage} from '../pages/OurTeamPage';
 import {Basket} from '../pages/Basket';
 import {NotFoundPage} from '../pages/NotFoundPage';
-
+import {Container} from './Container';
 /* const Header = lazy(() => import('./Header/Header')); */
 /* const HomePage = lazy(() => import('../pages/HomePage')); */
 
 export const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
+        <Container>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -31,6 +32,8 @@ export const App = () => {
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
+        </Container>
+        
       </Suspense>
     </ThemeProvider>
   );
