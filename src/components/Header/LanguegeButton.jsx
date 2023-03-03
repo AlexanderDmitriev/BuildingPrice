@@ -23,7 +23,6 @@ export const LanguegeButton = () => {
         onChange={selectLanguegeHandler}
         options={options}
         placeholder={'UA'}
-        
       />
     </>
   );

@@ -22,7 +22,7 @@ export const Back3 = styled.img`
   top: 636px;
 `;
 
-export const Container = ({children}) => {
+export const Container = ({ children }) => {
   return (
     <TempContainer>
       <Back1 src={back1}></Back1>

@@ -55,7 +55,7 @@ export const UserMenu = styled.div`
 
 export const SelectLanguege = styled(Select)`
   width: 57px;
-  
+
   .css-13cymwt-control,
   .css-t3ipsp-control {
     border: none;
@@ -75,11 +75,11 @@ export const SelectLanguege = styled(Select)`
     color: #191924;
   }
   .css-1xc3v61-indicatorContainer,
-  .css-15lsz6c-indicatorContainer{
+  .css-15lsz6c-indicatorContainer {
     color: #191924;
     padding: 0;
   }
-  .css-1fdsijx-ValueContainer{
-    padding:0;
+  .css-1fdsijx-ValueContainer {
+    padding: 0;
   }
 `;

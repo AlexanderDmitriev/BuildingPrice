@@ -12,7 +12,7 @@ import {
 import { LanguegeButton } from './LanguegeButton';
 /* import Burger from './Navigation/Burger/Burger';
 import Menu from './Navigation/Menu/Menu'; */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 /* import { useMediaQuery } from 'react-responsive'; */
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 /* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
@@ -21,12 +21,15 @@ import { NavLink } from 'react-router-dom';
 import logo2 from '../../images/sargonikaUaLogo.jpg';
 import basketLogo from '../../images/cart.svg';
 
-
-const Header = () => {
+const Header = ({
+  isOpen,
+  setIsOpen,
+  isDarkTheme,
+  setIsDarkTheme,
+  currentTheme,
+  setCurrentTheme,
+}) => {
   /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState('light');
 
   const node = useRef();
   useOnClickOutside(node, () => setIsOpen(false));
@@ -35,10 +38,11 @@ const Header = () => {
     setIsDarkTheme(!isDarkTheme);
     console.log(isDarkTheme);
   };
-useEffect(()=>{
-   isDarkTheme?setCurrentTheme('dark'):setCurrentTheme('light');
-   console.log(currentTheme);
-},[isDarkTheme]);
+  useEffect(() => {
+    isDarkTheme ? setCurrentTheme('dark') : setCurrentTheme('light');
+    console.log(currentTheme);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isDarkTheme]);
 
   return (
     <HeaderSection>
@@ -73,13 +77,7 @@ useEffect(()=>{
           </AdditionalNavigation>
         </HeaderBody>
       </HeaderContainer>
-
       {/* 
-          <ThemeButton
-            isDarkTheme={isDarkTheme}
-            handleChangeTheme={handleChangeTheme}
-          />
-
         <>
           <LanguegeButton />
           <div ref={node}>
