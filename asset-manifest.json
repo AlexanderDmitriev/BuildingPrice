@@ -1,13 +1,18 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.d0f227ca.js",
+    "main.js": "/BuildingPrice/static/js/main.39d9a79f.js",
+    "static/media/sargonikaUaLogo.jpg": "/BuildingPrice/static/media/sargonikaUaLogo.2957f58b8251cae7daf2.jpg",
+    "static/media/Group30.svg": "/BuildingPrice/static/media/Group30.0678d6ce9b60239f68d3c74fc7986b63.svg",
+    "static/media/Group29.svg": "/BuildingPrice/static/media/Group29.ab4df022f246de4407bf9a2c8f789c06.svg",
+    "static/media/OBJECTS1.svg": "/BuildingPrice/static/media/OBJECTS1.a097fea99ff5d055642b2dcf39991d22.svg",
     "index.html": "/BuildingPrice/index.html",
+    "static/media/cart.svg": "/BuildingPrice/static/media/cart.4892410666023218170c14245a2b1dce.svg",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.d0f227ca.js.map": "/BuildingPrice/static/js/main.d0f227ca.js.map"
+    "main.39d9a79f.js.map": "/BuildingPrice/static/js/main.39d9a79f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.d0f227ca.js"
+    "static/js/main.39d9a79f.js"
   ]
 }
