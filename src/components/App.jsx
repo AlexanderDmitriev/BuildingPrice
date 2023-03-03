@@ -38,6 +38,7 @@ export const App = () => {
             currentTheme={currentTheme}
             setCurrentTheme={setCurrentTheme}
           />
+          <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/fop" element={<Services />} />
@@ -47,6 +48,8 @@ export const App = () => {
             <Route path="/basket" element={<Basket />} />
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
+          </div>
+          
           <Footer />
         </Container>
       </Suspense>

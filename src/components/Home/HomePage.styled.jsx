@@ -51,6 +51,7 @@ export const ReadMoreButton = styled(NavLink)`
   align-items: center;
   color: #ffffff;
   display: inline;
+  text-decoration: none;
 `;
 
 export const AboutUsTopic = styled.p`
