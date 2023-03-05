@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeroSection = styled.div`
-  padding-bottom: 125px;
+  padding-bottom: 245px;
 `;
 
 export const MainSlogan = styled.p`
@@ -65,4 +65,45 @@ export const AboutUsTopic = styled.p`
   align-items: center;
   color: #191924;
   padding-bottom: 24px;
+`;
+
+export const AboutUsImg = styled.img`
+  height: 438px;
+`;
+
+export const AboutUsSecton = styled.div`
+  display: flex;
+  padding-bottom: 350px;
+`;
+
+export const AboutUsTitle = styled.h2`
+  font-family: 'Inter' serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 120%;
+  /* identical to box height, or 120px */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #191924;
+`;
+
+export const OffersSection = styled.div`
+  padding-bottom: 320px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const OffersList = styled.ul`
+  list-style: none;
+  & li:not(:last-child) {
+    padding-bottom: 40px;
+  }
+`;
+
+export const ClientsSection = styled.div`
+  padding-bottom: 240px;
 `;

@@ -8,6 +8,7 @@ export const HeaderSection = styled.header`
   top: 0;
   left: 0;
   z-index: 200;
+  background-color: #fff;
 `;
 
 export const HeaderBody = styled.div`

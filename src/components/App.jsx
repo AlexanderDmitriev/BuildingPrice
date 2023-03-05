@@ -29,8 +29,7 @@ export const App = () => {
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
-        <Container>
-          <Header
+      <Header
             isOpen={isOpen}
             setIsOpen={setIsOpen}
             isDarkTheme={isDarkTheme}
@@ -38,6 +37,7 @@ export const App = () => {
             currentTheme={currentTheme}
             setCurrentTheme={setCurrentTheme}
           />
+        <Container>
           <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
