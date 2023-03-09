@@ -1,19 +1,27 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.edc1e6ef.js",
+    "main.js": "/BuildingPrice/static/js/main.42f47bbf.js",
+    "static/media/money.jpg": "/BuildingPrice/static/media/money.35e627bc39561de95cb9.jpg",
     "static/media/sargonikaUaLogo.jpg": "/BuildingPrice/static/media/sargonikaUaLogo.2957f58b8251cae7daf2.jpg",
     "static/media/Group30.svg": "/BuildingPrice/static/media/Group30.0678d6ce9b60239f68d3c74fc7986b63.svg",
     "static/media/Group29.svg": "/BuildingPrice/static/media/Group29.ab4df022f246de4407bf9a2c8f789c06.svg",
     "static/media/OBJECTS1.svg": "/BuildingPrice/static/media/OBJECTS1.a097fea99ff5d055642b2dcf39991d22.svg",
     "static/media/Group31.svg": "/BuildingPrice/static/media/Group31.979285d94c6e093c8db61c6d0c09c65d.svg",
+    "static/media/viber.svg": "/BuildingPrice/static/media/viber.87277413553707a09b81110dde71a437.svg",
+    "static/media/instagram.svg": "/BuildingPrice/static/media/instagram.9bd6921d0e6f682ef39494609d13cb9e.svg",
+    "static/media/whatsapp.svg": "/BuildingPrice/static/media/whatsapp.6ca0cabb41bf534ce43bc9eb6e212cf6.svg",
     "index.html": "/BuildingPrice/index.html",
     "static/media/cart.svg": "/BuildingPrice/static/media/cart.4892410666023218170c14245a2b1dce.svg",
+    "static/media/telegram.svg": "/BuildingPrice/static/media/telegram.d27e5a670d926587f52b9f7a6009ef66.svg",
+    "static/media/envelop.svg": "/BuildingPrice/static/media/envelop.2e57455414a9d883bfdbb07eca200f3a.svg",
+    "static/media/facebook2.svg": "/BuildingPrice/static/media/facebook2.7e12c4339b04a47f35b3b3bb16a25265.svg",
+    "static/media/phone.svg": "/BuildingPrice/static/media/phone.9553808c2045790e30e550f74b5bed2b.svg",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.edc1e6ef.js.map": "/BuildingPrice/static/js/main.edc1e6ef.js.map"
+    "main.42f47bbf.js.map": "/BuildingPrice/static/js/main.42f47bbf.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.edc1e6ef.js"
+    "static/js/main.42f47bbf.js"
   ]
 }
