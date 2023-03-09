@@ -15,7 +15,8 @@ import {
   OffersList,ClientListItem,
 } from '../components/Home/HomePage.styled';
 import { slogans } from 'components/Home/slogans';
-import altPic from '../images/PhotoAlt.png';
+/* import altPic from '../images/PhotoAlt.png'; */
+import money from '../images/money.jpg';
 
 export const HomePage = () => {
   const randomSlogan = Math.floor(Math.random() * 10);
@@ -41,7 +42,7 @@ export const HomePage = () => {
             тільки робота, але й наше "обличчя"
           </AboutUsTopic>
         </div>
-        <AboutUsImg src={altPic} alt="" />
+        <AboutUsImg src={money} alt="" />
       </AboutUsSecton>
       <OffersSection>
         <OffersText>
