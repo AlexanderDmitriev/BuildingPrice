@@ -29,27 +29,27 @@ export const App = () => {
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
-      <Header
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            isDarkTheme={isDarkTheme}
-            setIsDarkTheme={setIsDarkTheme}
-            currentTheme={currentTheme}
-            setCurrentTheme={setCurrentTheme}
-          />
+        <Header
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          isDarkTheme={isDarkTheme}
+          setIsDarkTheme={setIsDarkTheme}
+          currentTheme={currentTheme}
+          setCurrentTheme={setCurrentTheme}
+        />
         <Container>
           <div>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/fop" element={<Services />} />
-            <Route path="/ooo" element={<Services />} />
-            <Route path="/questions" element={<MakeQuestionPage />} />
-            <Route path="/team" element={<OurTeamPage />} />
-            <Route path="/basket" element={<Basket />} />
-            <Route path="/*" element={<NotFoundPage />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/fop" element={<Services />} />
+              <Route path="/ooo" element={<Services />} />
+              <Route path="/questions" element={<MakeQuestionPage />} />
+              <Route path="/team" element={<OurTeamPage />} />
+              <Route path="/basket" element={<Basket />} />
+              <Route path="/*" element={<NotFoundPage />} />
+            </Routes>
           </div>
-          
+
           <Footer />
         </Container>
       </Suspense>

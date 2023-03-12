@@ -16,7 +16,6 @@ export const LanguegeButton = () => {
     { value: 'ua', label: 'UA' },
     { value: 'ru', label: 'RU' },
     { value: 'en', label: 'EN' },
-    { value: 'pl', label: 'PL' },
   ];
 
   const selectLanguegeHandler = event => {

@@ -1,15 +1,10 @@
 import Navigation from './Navigation/NavigationSection';
-import ThemeButton from './ThemeChange/ThemeButton';
 import {
   HeaderSection,
   HeaderBody,
-  AdditionalNavigation,
   HeaderContainer,
   Logo,
-  BasketLogo,
-  BasketLink,
 } from './Header.styled';
-import { LanguegeButton } from './LanguegeButton';
 /* import Burger from './Navigation/Burger/Burger';
 import Menu from './Navigation/Menu/Menu'; */
 import React, { useEffect, useRef } from 'react';
@@ -17,9 +12,8 @@ import React, { useEffect, useRef } from 'react';
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 /* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
 import { NavLink } from 'react-router-dom';
-/* import logo from '../../images/Logo.svg'; */
 import logo2 from '../../images/sargonikaUaLogo.jpg';
-import basketLogo from '../../images/cart.svg';
+import { OtherNavigation } from './Navigation/OtherNavigation';
 
 const Header = ({
   isOpen,
@@ -41,7 +35,7 @@ const Header = ({
   useEffect(() => {
     isDarkTheme ? setCurrentTheme('dark') : setCurrentTheme('light');
     console.log(currentTheme);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDarkTheme]);
 
   return (
@@ -54,27 +48,10 @@ const Header = ({
             </span>
           </NavLink>
           <Navigation />
-          <AdditionalNavigation>
-            <li>
-              <ThemeButton
-                isDarkTheme={isDarkTheme}
-                handleChangeTheme={handleChangeTheme}
-              />
-            </li>
-            <li>
-              <LanguegeButton />
-            </li>
-            <li>
-              <BasketLink to="/basket">
-                <span>
-                  {/* <BasketLogo width="24" height="24">
-                    <use src={basketLogo}></use>
-                  </BasketLogo> */}
-                  <BasketLogo src={basketLogo} alt="basket" />
-                </span>
-              </BasketLink>
-            </li>
-          </AdditionalNavigation>
+          <OtherNavigation
+            isDarkTheme={isDarkTheme}
+            handleChangeTheme={handleChangeTheme}
+          />
         </HeaderBody>
       </HeaderContainer>
       {/* 
