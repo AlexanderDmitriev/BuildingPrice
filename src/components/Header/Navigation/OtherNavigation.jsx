@@ -4,7 +4,7 @@ import { LanguegeButton } from '../LanguegeButton';
 import React from 'react';
 import basketLogo from '../../../images/cart.svg';
 
-export const OtherNavigation = ({ isDarkTheme, handleChangeTheme }) => {
+export const OtherNavigation = ({ isDarkTheme, handleChangeTheme,i18n }) => {
   return (
     <AdditionalNavigation>
       <li>
@@ -14,7 +14,7 @@ export const OtherNavigation = ({ isDarkTheme, handleChangeTheme }) => {
         />
       </li>
       <li>
-        <LanguegeButton />
+        <LanguegeButton i18n={i18n}/>
       </li>
       <li>
         <BasketLink to="/basket">

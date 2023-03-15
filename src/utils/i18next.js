@@ -9,9 +9,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: { 'en-US': en, 'ua-UA': ua, 'ru-RU': ru },
+    resources: { 'en': en, 'ua': ua, 'ru': ru },
     fallbackLng: 'ua',
-    supportedLngs: ['ua', 'ru', 'en'],
+    supportedLngs: ['en','ua', 'ru'],
     debug: true,
     detection: {
       order: ['cookie', 'localStorage'],
@@ -22,4 +22,4 @@ i18n
     },
   });
 
-export default i18n;
+

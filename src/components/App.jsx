@@ -19,11 +19,15 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 import { Container } from './Container';
 /* const Header = lazy(() => import('./Header/Header')); */
 /* const HomePage = lazy(() => import('../pages/HomePage')); */
+import { useTranslation } from 'react-i18next';
+import '../utils/i18next';
 
 export const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('light');
+
+  const { t,i18n } = useTranslation();
 
   return (
     <ThemeProvider theme={light}>
@@ -36,11 +40,13 @@ export const App = () => {
           setIsDarkTheme={setIsDarkTheme}
           currentTheme={currentTheme}
           setCurrentTheme={setCurrentTheme}
+          t={t}
+          i18n={i18n}
         />
         <Container>
           <div>
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<HomePage/>} />
               <Route path="/fop" element={<Services />} />
               <Route path="/ooo" element={<Services />} />
               <Route path="/questions" element={<MakeQuestionPage />} />

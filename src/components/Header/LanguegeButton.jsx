@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { SelectLanguege } from './Header.styled';
-import { useTranslation } from 'react-i18next';
 /* import cookies from 'js-cookie'; */
 
-export const LanguegeButton = () => {
+export const LanguegeButton = ({i18n}) => {
   const [selectedOption, setSelectedOption] = useState({
     value: 'ua',
     label: 'UA',
   });
-  const { i18n } = useTranslation();
 
 /*   const currentLang = cookies.get('i18next') || 'ua'; */
 

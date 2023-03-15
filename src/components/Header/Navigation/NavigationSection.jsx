@@ -1,10 +1,9 @@
 import { NavigationList, ServicesLink } from './NavigationSection.styled';
-import { useTranslation } from 'react-i18next';
-import '../../../utils/i18next';
 
-const Navigation = () => {
-  const { t } = useTranslation();
+const Navigation = ({ t }) => {
 
+  const test = t("navigation.main");
+  console.log(test)
   return (
     <nav>
       <NavigationList>

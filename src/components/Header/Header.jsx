@@ -22,6 +22,7 @@ const Header = ({
   setIsDarkTheme,
   currentTheme,
   setCurrentTheme,
+  t, i18n,
 }) => {
   /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
 
@@ -30,11 +31,11 @@ const Header = ({
 
   const handleChangeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-    console.log(isDarkTheme);
+    /* console.log(isDarkTheme); */
   };
   useEffect(() => {
     isDarkTheme ? setCurrentTheme('dark') : setCurrentTheme('light');
-    console.log(currentTheme);
+    /* console.log(currentTheme); */
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDarkTheme]);
 
@@ -47,10 +48,11 @@ const Header = ({
               <Logo src={logo2} alt="sargonika-ukraine" />
             </span>
           </NavLink>
-          <Navigation />
+          <Navigation  t={t}/>
           <OtherNavigation
             isDarkTheme={isDarkTheme}
             handleChangeTheme={handleChangeTheme}
+            i18n={i18n}
           />
         </HeaderBody>
       </HeaderContainer>
