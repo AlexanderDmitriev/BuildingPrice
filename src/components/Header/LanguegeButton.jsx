@@ -29,7 +29,7 @@ export const LanguegeButton = ({i18n}) => {
         defaultValue={selectedOption | { value: 'ua', label: 'UA' }}
         onChange={selectLanguegeHandler}
         options={options}
-        placeholder={'UA'}
+        placeholder={`${selectedOption.label}`}
       />
     </>
   );

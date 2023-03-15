@@ -5,13 +5,20 @@ import ua from '../locales/ua/translation.json';
 import en from '../locales/en/translation.json';
 import ru from '../locales/ru/translation.json';
 
+const resources = {
+  en: { translation: en },
+  ua: { translation: ua },
+  ru: { translation: ru },
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: { 'en': en, 'ua': ua, 'ru': ru },
+    /* resources: { 'en': en, 'ua': ua, 'ru': ru }, */
+    resources,
     fallbackLng: 'ua',
-    supportedLngs: ['en','ua', 'ru'],
+    supportedLngs: ['en', 'ua', 'ru'],
     debug: true,
     detection: {
       order: ['cookie', 'localStorage'],
@@ -21,5 +28,3 @@ i18n
       escapeValue: false,
     },
   });
-
-
