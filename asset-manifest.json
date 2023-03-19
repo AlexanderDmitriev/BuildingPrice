@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.8046c0f2.js",
+    "main.js": "/BuildingPrice/static/js/main.20b969f2.js",
     "static/media/money.jpg": "/BuildingPrice/static/media/money.35e627bc39561de95cb9.jpg",
     "static/media/sargonikaUaLogo.jpg": "/BuildingPrice/static/media/sargonikaUaLogo.2957f58b8251cae7daf2.jpg",
     "static/media/Group30.svg": "/BuildingPrice/static/media/Group30.0678d6ce9b60239f68d3c74fc7986b63.svg",
@@ -15,13 +15,14 @@
     "static/media/cart.svg": "/BuildingPrice/static/media/cart.4892410666023218170c14245a2b1dce.svg",
     "static/media/telegram.svg": "/BuildingPrice/static/media/telegram.d27e5a670d926587f52b9f7a6009ef66.svg",
     "static/media/envelop.svg": "/BuildingPrice/static/media/envelop.2e57455414a9d883bfdbb07eca200f3a.svg",
+    "static/media/getFetch.cjs": "/BuildingPrice/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/facebook2.svg": "/BuildingPrice/static/media/facebook2.7e12c4339b04a47f35b3b3bb16a25265.svg",
     "static/media/phone.svg": "/BuildingPrice/static/media/phone.9553808c2045790e30e550f74b5bed2b.svg",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.8046c0f2.js.map": "/BuildingPrice/static/js/main.8046c0f2.js.map"
+    "main.20b969f2.js.map": "/BuildingPrice/static/js/main.20b969f2.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.8046c0f2.js"
+    "static/js/main.20b969f2.js"
   ]
 }
