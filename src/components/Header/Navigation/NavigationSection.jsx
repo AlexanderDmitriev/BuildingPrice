@@ -2,8 +2,6 @@ import { NavigationList, ServicesLink } from './NavigationSection.styled';
 
 const Navigation = ({ t }) => {
 
-  const test = t("navigation.main");
-  console.log(test)
   return (
     <nav>
       <NavigationList>
@@ -11,16 +9,16 @@ const Navigation = ({ t }) => {
           <ServicesLink to="/">{t('navigation.main')}</ServicesLink>
         </li>
         <li>
-          <ServicesLink to="/fop">Послуги ФОП</ServicesLink>
+          <ServicesLink to="/fop">{t('navigation.toFOP')}</ServicesLink>
         </li>
         <li>
-          <ServicesLink to="/ooo">Послуги юр. особам</ServicesLink>
+          <ServicesLink to="/ooo">{t('navigation.toOOO')}</ServicesLink>
         </li>
         <li>
-          <ServicesLink to="/questions">Питання</ServicesLink>
+          <ServicesLink to="/questions">{t('navigation.questions')}</ServicesLink>
         </li>
         <li>
-          <ServicesLink to="/team">Наша команда</ServicesLink>
+          <ServicesLink to="/team">{t('navigation.team')}</ServicesLink>
         </li>
       </NavigationList>
     </nav>

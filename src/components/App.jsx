@@ -27,7 +27,7 @@ export const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('light');
 
-  const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <ThemeProvider theme={light}>
@@ -46,7 +46,7 @@ export const App = () => {
         <Container>
           <div>
             <Routes>
-              <Route path="/" element={<HomePage/>} />
+              <Route path="/" element={<HomePage t={t} />} />
               <Route path="/fop" element={<Services />} />
               <Route path="/ooo" element={<Services />} />
               <Route path="/questions" element={<MakeQuestionPage />} />

@@ -5,5 +5,48 @@
     "toOOO": "For entities",
     "questions": "Ask a question",
     "team": "Our team"
+  },
+  "homePage": {
+    "home": {
+      "mainSlogan": "We are work for you",
+      "readMore": "Read more",
+      "ClientsTitle": "Clients",
+      "Client1": "HA Elephant",
+      "Client2": "HA Molodizne Mistechko",
+      "Client3": "HA Marshal",
+      "Client4": "Entepreneur Dmytriiev O.O.",
+      "Client5": "Entepreneur Mykhailova G.V.",
+      "Client6": "and others"
+    },
+    "aboutUs": {
+      "title": "ABOUT US",
+      "topic": "Team Sargonica Ukraine have perennial accounting experiense ведення, dispute resolution with the controlling authorities. Throughout our professional experience we doing everything for any client`s problems will be dicide even before that can only appear.",
+      "topic2": "We are demanding towards to quality support for your bussisnes, because it is not only work, but  робота, but also our reputation."
+    },
+    "offers": {
+      "title": "Services",
+      "topic1": "Quality accounting throughout the territory Ukraine. Our specialists have great experience, so you can be sure - you are with reliable team.",
+      "topic2": "Personal work with every client, individual decisions and communication in a way that is convenient for you. You don`t need to worry about the intricacies of accounting or changings in the tax laws. We will do it for you.",
+      "forAccounting": "Accounting",
+      "forTax": "Tax obligations",
+      "forFOP": "Сounseling for individuals",
+      "forOOO": "Counseling for companies"
+    },
+    "slogans": {
+      "part1": "Wise people and cashiers are equally calm about money - Emmanuil German",
+      "part2": "Only accountants could set the date of creation of the world - Stanislav Jerzy Lets",
+      "part3": "The great thickness of this report protected it from the danger of being read - Winston Churchill",
+      "part4": "Accounting is the triumph of reason over mathematics",
+      "part5": "There are two things you can't prevent in life - death and taxes - Benjamin Franklin",
+      "part6": "Taxes are the price of civilization - Oliver Wendell Holmes",
+      "part7": "A real accountant may not be able to fit only trousers - Joseph Yudylevich",
+      "part8": "The manager should not forget that accounting is only an addition to business thinking, and not its replacement",
+      "part9": "You can look down on money, but you can't lose sight of it - Andre Prevost",
+      "part10": "Answer to yourself daily until the moment when you will be asked for a report - Lucius Annaeus Seneca Jr.",
+      "part11": "An accountant is a person who solves problems you didn't know about in a way you don't understand.",
+      "part12": "Success is the sum of small efforts repeated daily - R. Collier",
+      "part13": "You are not your resume, you are your work - Seth Hodin",
+      "part14": "A goal without a plan is just a dream - Brian Tracy"
+    }
   }
 }

@@ -1,5 +1,5 @@
 import {
-  CoolSlogans,
+/*   CoolSlogans, */
   MainSlogan,
   ReadMoreButton,
   HeroSection,
@@ -8,30 +8,32 @@ import {
   ClienList,
   ClientListItem,
 } from '../components/Home/HomePage.styled';
-import { slogans } from 'components/Home/slogans';
+/* import { slogans } from 'components/Home/slogans'; */
 import { AboutUs } from '../components/Home/AboutUs';
 import { Offers } from '../components/Home/Offers';
+import {GetSlogans} from '../components/Home/GetSlogans';
 
-export const HomePage = () => {
-  const randomSlogan = Math.floor(Math.random() * 10);
+export const HomePage = ({t}) => {
+/*   const randomSlogan = Math.floor(Math.random() * 10); */
   return (
     <>
       <HeroSection>
-        <MainSlogan>Ми працюємо для вас</MainSlogan>
-        <CoolSlogans>{slogans[randomSlogan]}</CoolSlogans>
-        <ReadMoreButton to="/questions">Дізнатися більше</ReadMoreButton>
+        <MainSlogan>{t('homePage.home.mainSlogan')}</MainSlogan>
+{/*         <CoolSlogans>{slogans[randomSlogan]}</CoolSlogans> */}
+        <GetSlogans t={t}/>
+        <ReadMoreButton to="/questions">{t('homePage.home.readMore')}</ReadMoreButton>
       </HeroSection>
-      <AboutUs />
-      <Offers />
+      <AboutUs t={t}/>
+      <Offers t={t}/>
       <ClientsSection>
-        <AboutUsTitle>Клієнти</AboutUsTitle>
+        <AboutUsTitle>{t('homePage.home.ClientsTitle')}</AboutUsTitle>
         <ClienList>
-          <ClientListItem>ОСББ Елефант</ClientListItem>
-          <ClientListItem>ОСББ Молодіжне містечко</ClientListItem>
-          <ClientListItem>ОСББ Маршал</ClientListItem>
-          <ClientListItem>ФОП Дмитрієв О.О.</ClientListItem>
-          <ClientListItem>ФОП Михайлова Г.В</ClientListItem>
-          <ClientListItem>та інші</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client1')}</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client2')}</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client3')}</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client4')}</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client5')}</ClientListItem>
+          <ClientListItem>{t('homePage.home.Client6')}</ClientListItem>
         </ClienList>
       </ClientsSection>
     </>
