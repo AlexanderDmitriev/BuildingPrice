@@ -1,5 +1,4 @@
 import {
-/*   CoolSlogans, */
   MainSlogan,
   ReadMoreButton,
   HeroSection,
@@ -8,23 +7,22 @@ import {
   ClienList,
   ClientListItem,
 } from '../components/Home/HomePage.styled';
-/* import { slogans } from 'components/Home/slogans'; */
 import { AboutUs } from '../components/Home/AboutUs';
 import { Offers } from '../components/Home/Offers';
-import {GetSlogans} from '../components/Home/GetSlogans';
+import { GetSlogans } from '../components/Home/GetSlogans';
 
-export const HomePage = ({t}) => {
-/*   const randomSlogan = Math.floor(Math.random() * 10); */
+export const HomePage = ({ t }) => {
   return (
     <>
       <HeroSection>
         <MainSlogan>{t('homePage.home.mainSlogan')}</MainSlogan>
-{/*         <CoolSlogans>{slogans[randomSlogan]}</CoolSlogans> */}
-        <GetSlogans t={t}/>
-        <ReadMoreButton to="/questions">{t('homePage.home.readMore')}</ReadMoreButton>
+        <GetSlogans t={t} />
+        <ReadMoreButton to="/questions">
+          {t('homePage.home.readMore')}
+        </ReadMoreButton>
       </HeroSection>
-      <AboutUs t={t}/>
-      <Offers t={t}/>
+      <AboutUs t={t} />
+      <Offers t={t} />
       <ClientsSection>
         <AboutUsTitle>{t('homePage.home.ClientsTitle')}</AboutUsTitle>
         <ClienList>

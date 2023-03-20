@@ -3,8 +3,8 @@ import { /* theme, */ light /* dark */ } from './theme';
 import { GlobalStyles } from './global';
 import React, {
   useState,
-  /* useEffect,
-  useRef, */
+  useEffect,
+  /* useRef, */
   /* lazy, */ Suspense,
 } from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -21,13 +21,20 @@ import { Container } from './Container';
 /* const HomePage = lazy(() => import('../pages/HomePage')); */
 import { useTranslation } from 'react-i18next';
 import '../utils/i18next';
+import { useSelector } from 'react-redux';
 
 export const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('light');
-
   const { t, i18n } = useTranslation();
+
+  const getLocale = state => state.locale.currentLocale;
+  const currentLocale = useSelector(getLocale);
+
+  useEffect(() => {
+    window.localStorage.setItem('locale', JSON.stringify(currentLocale));
+  }, [currentLocale]);
 
   return (
     <ThemeProvider theme={light}>
