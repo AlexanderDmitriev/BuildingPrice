@@ -6,7 +6,8 @@ export const HeaderSection = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
+  left: 15px;
+  width: 95%;
   z-index: 200;
   background-color: #fff;
 `;

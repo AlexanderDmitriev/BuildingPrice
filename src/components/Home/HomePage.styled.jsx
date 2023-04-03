@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeroSection = styled.div`
-  padding-bottom: 245px;
+  padding-bottom: 200px;
 `;
 
 export const MainSlogan = styled.p`
@@ -19,7 +19,7 @@ export const MainSlogan = styled.p`
   color: #191924;
   position: relative;
   z-index: 20;
-  padding-top: 113px;
+  padding-top: 100px;
   padding-bottom: 24px;
   width: 801px;
 `;
@@ -39,8 +39,9 @@ export const CoolSlogans = styled.p`
 `;
 
 export const ReadMoreButton = styled(NavLink)`
-  background: #547fe7;
+  background-color: #418B77;
   padding: 16px 32px;
+  border-radius: 8px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -52,6 +53,9 @@ export const ReadMoreButton = styled(NavLink)`
   color: #ffffff;
   display: inline;
   text-decoration: none;
+  :hover{
+    background-color:#529C88;
+  }
 `;
 
 export const AboutUsTopic = styled.p`
@@ -68,12 +72,13 @@ export const AboutUsTopic = styled.p`
 `;
 
 export const AboutUsImg = styled.img`
-  height: 438px;
+  width: 50%;
 `;
 
 export const AboutUsSecton = styled.div`
   display: flex;
-  padding-bottom: 350px;
+  padding-bottom: 300px;
+  
 `;
 
 export const AboutUsTitle = styled.h2`
@@ -84,15 +89,19 @@ export const AboutUsTitle = styled.h2`
   line-height: 120%;
   /* identical to box height, or 120px */
   margin: 0;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-transform: uppercase;
-
   color: #191924;
+  border-bottom: 1px solid #418B77;
+  div{
+    height: 24px;
+    display: block;
+    border-top: 1px solid #418B77;
+  }
 `;
 
 export const OffersSection = styled.div`
-  padding-bottom: 320px;
+  padding-bottom: 300px;
   display: flex;
   justify-content: space-between;
 `;
@@ -113,6 +122,12 @@ export const OffersTitle = styled.h2`
   text-transform: uppercase;
 
   color: #191924;
+  border-bottom: 1px solid #418B77;
+  div{
+    height: 24px;
+    display: block;
+    border-top: 1px solid #418B77;
+  }
 `;
 
 export const OffersTopic = styled.p`
@@ -126,6 +141,7 @@ export const OffersTopic = styled.p`
   display: flex;
   align-items: center;
   color: #191924;
+  padding-bottom: 24px;
 `;
 
 export const OffersList = styled.ul`
@@ -151,7 +167,7 @@ export const OfferListItem = styled.li`
 `;
 
 export const ClientsSection = styled.div`
-  padding-bottom: 240px;
+  padding-bottom: 200px;
 `;
 
 export const ClienList = styled.ul`
