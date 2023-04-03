@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.ed1b6bf3.js",
-    "static/media/money.jpg": "/BuildingPrice/static/media/money.35e627bc39561de95cb9.jpg",
+    "main.js": "/BuildingPrice/static/js/main.b26049ad.js",
+    "static/media/moneyTree.png": "/BuildingPrice/static/media/moneyTree.039d3232b9465bcc51bb.png",
     "static/media/sargonikaUaLogo.jpg": "/BuildingPrice/static/media/sargonikaUaLogo.2957f58b8251cae7daf2.jpg",
-    "static/media/Group30.svg": "/BuildingPrice/static/media/Group30.0678d6ce9b60239f68d3c74fc7986b63.svg",
+    "static/media/Background2.svg": "/BuildingPrice/static/media/Background2.102b395bb2331171fe4a904a6d738f4d.svg",
     "static/media/Group29.svg": "/BuildingPrice/static/media/Group29.ab4df022f246de4407bf9a2c8f789c06.svg",
-    "static/media/OBJECTS1.svg": "/BuildingPrice/static/media/OBJECTS1.a097fea99ff5d055642b2dcf39991d22.svg",
-    "static/media/Group31.svg": "/BuildingPrice/static/media/Group31.979285d94c6e093c8db61c6d0c09c65d.svg",
+    "static/media/Background1.svg": "/BuildingPrice/static/media/Background1.4a68ed86c7cda0e886f9d2b277a64988.svg",
+    "static/media/Background3.svg": "/BuildingPrice/static/media/Background3.47b7f44cb8fd8cb48acc6dad337239cf.svg",
     "static/media/viber.svg": "/BuildingPrice/static/media/viber.87277413553707a09b81110dde71a437.svg",
     "static/media/instagram.svg": "/BuildingPrice/static/media/instagram.9bd6921d0e6f682ef39494609d13cb9e.svg",
     "static/media/whatsapp.svg": "/BuildingPrice/static/media/whatsapp.6ca0cabb41bf534ce43bc9eb6e212cf6.svg",
     "index.html": "/BuildingPrice/index.html",
-    "static/media/cart.svg": "/BuildingPrice/static/media/cart.4892410666023218170c14245a2b1dce.svg",
+    "static/media/basket2.svg": "/BuildingPrice/static/media/basket2.1da2e9edbe29a93fddd7935db75ed544.svg",
     "static/media/telegram.svg": "/BuildingPrice/static/media/telegram.d27e5a670d926587f52b9f7a6009ef66.svg",
     "static/media/envelop.svg": "/BuildingPrice/static/media/envelop.2e57455414a9d883bfdbb07eca200f3a.svg",
     "static/media/getFetch.cjs": "/BuildingPrice/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/facebook2.svg": "/BuildingPrice/static/media/facebook2.7e12c4339b04a47f35b3b3bb16a25265.svg",
     "static/media/phone.svg": "/BuildingPrice/static/media/phone.9553808c2045790e30e550f74b5bed2b.svg",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.ed1b6bf3.js.map": "/BuildingPrice/static/js/main.ed1b6bf3.js.map"
+    "main.b26049ad.js.map": "/BuildingPrice/static/js/main.b26049ad.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.ed1b6bf3.js"
+    "static/js/main.b26049ad.js"
   ]
 }
