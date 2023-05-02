@@ -61,7 +61,7 @@ export const SelectLanguege = styled(Select)`
   .css-13cymwt-control,
   .css-t3ipsp-control {
     border: none;
-    font-family: 'Inter' serif;
+    font-family: Inter serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

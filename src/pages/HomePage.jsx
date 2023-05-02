@@ -10,6 +10,9 @@ import {
 import { AboutUs } from '../components/Home/AboutUs';
 import { Offers } from '../components/Home/Offers';
 import { GetSlogans } from '../components/Home/GetSlogans';
+import osbbLogo from '../images/home3.svg';
+import fopLogo from '../images/user-tie.svg';
+import { BasketLogo } from '../components/Header/Header.styled';
 
 export const HomePage = ({ t }) => {
   return (
@@ -24,13 +27,31 @@ export const HomePage = ({ t }) => {
       <AboutUs t={t} />
       <Offers t={t} />
       <ClientsSection>
-        <AboutUsTitle>{t('homePage.home.ClientsTitle')}</AboutUsTitle>
+        <AboutUsTitle>
+          {t('homePage.home.ClientsTitle')} <div></div>{' '}
+        </AboutUsTitle>
         <ClienList>
-          <ClientListItem>{t('homePage.home.Client1')}</ClientListItem>
-          <ClientListItem>{t('homePage.home.Client2')}</ClientListItem>
-          <ClientListItem>{t('homePage.home.Client3')}</ClientListItem>
-          <ClientListItem>{t('homePage.home.Client4')}</ClientListItem>
-          <ClientListItem>{t('homePage.home.Client5')}</ClientListItem>
+          <ClientListItem>
+            {' '}
+            <BasketLogo src={osbbLogo} alt="basket" />{' '}
+            {t('homePage.home.Client1')}
+          </ClientListItem>
+          <ClientListItem>
+            <BasketLogo src={osbbLogo} alt="basket" />{' '}
+            {t('homePage.home.Client2')}
+          </ClientListItem>
+          <ClientListItem>
+            <BasketLogo src={osbbLogo} alt="basket" />{' '}
+            {t('homePage.home.Client3')}
+          </ClientListItem>
+          <ClientListItem>
+            <BasketLogo src={fopLogo} alt="basket" />{' '}
+            {t('homePage.home.Client4')}
+          </ClientListItem>
+          <ClientListItem>
+            <BasketLogo src={fopLogo} alt="basket" />{' '}
+            {t('homePage.home.Client5')}
+          </ClientListItem>
           <ClientListItem>{t('homePage.home.Client6')}</ClientListItem>
         </ClienList>
       </ClientsSection>

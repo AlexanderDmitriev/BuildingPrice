@@ -28,7 +28,7 @@ export const Back3 = styled.img`
 export const Back4 = styled.img`
   position: absolute;
   left: 0;
-  top: 1289px;
+  top: 1240px;
 `;
 
 export const Container = ({ children }) => {

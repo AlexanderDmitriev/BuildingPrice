@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import pointList from '../../images/point.svg';
 
 export const HeroSection = styled.div`
   padding-bottom: 200px;
 `;
 
 export const MainSlogan = styled.p`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
@@ -25,7 +26,7 @@ export const MainSlogan = styled.p`
 `;
 
 export const CoolSlogans = styled.p`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -39,7 +40,7 @@ export const CoolSlogans = styled.p`
 `;
 
 export const ReadMoreButton = styled(NavLink)`
-  background-color: #418B77;
+  background-color: #418b77;
   padding: 16px 32px;
   border-radius: 8px;
   font-family: 'Inter';
@@ -53,13 +54,13 @@ export const ReadMoreButton = styled(NavLink)`
   color: #ffffff;
   display: inline;
   text-decoration: none;
-  :hover{
-    background-color:#529C88;
+  :hover {
+    background-color: #529c88;
   }
 `;
 
 export const AboutUsTopic = styled.p`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -78,25 +79,25 @@ export const AboutUsImg = styled.img`
 export const AboutUsSecton = styled.div`
   display: flex;
   padding-bottom: 300px;
-  
 `;
 
 export const AboutUsTitle = styled.h2`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
   line-height: 120%;
   /* identical to box height, or 120px */
   margin: 0;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   color: #191924;
-  border-bottom: 1px solid #418B77;
-  div{
+  border-bottom: 1px solid #418b77;
+  width: 90%;
+  div {
     height: 24px;
     display: block;
-    border-top: 1px solid #418B77;
+    border-top: 1px solid #418b77;
   }
 `;
 
@@ -110,7 +111,7 @@ export const OffersText = styled.div`
   width: 50%;
 `;
 export const OffersTitle = styled.h2`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
@@ -122,16 +123,16 @@ export const OffersTitle = styled.h2`
   text-transform: uppercase;
 
   color: #191924;
-  border-bottom: 1px solid #418B77;
-  div{
+  border-bottom: 1px solid #418b77;
+  div {
     height: 24px;
     display: block;
-    border-top: 1px solid #418B77;
+    border-top: 1px solid #418b77;
   }
 `;
 
 export const OffersTopic = styled.p`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -145,14 +146,13 @@ export const OffersTopic = styled.p`
 `;
 
 export const OffersList = styled.ul`
-  list-style: none;
   & li:not(:last-child) {
     padding-bottom: 40px;
   }
 `;
 
 export const OfferListItem = styled.li`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 300;
   font-size: 48px;
@@ -164,6 +164,14 @@ export const OfferListItem = styled.li`
   text-align: right;
 
   color: #191924;
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 40px;
+    height: 24px;
+    width: 20px;
+    background-image: url(${pointList});
+  }
 `;
 
 export const ClientsSection = styled.div`
@@ -181,7 +189,7 @@ export const ClienList = styled.ul`
 `;
 
 export const ClientListItem = styled.li`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -191,9 +199,11 @@ export const ClientListItem = styled.li`
   margin-bottom: 10px;
   align-items: center;
   text-align: right;
-  background-color: #547fe7;
-  border-radius: 10px;
+  /* background-color: #547fe7; */
+  /* border-radius: 10px; */
+  border-left: 1px solid #418b77;
+  border-right: 1px solid #418b77;
 
   padding: 5px 10px;
-  color: #fff;
+  color: #191924;
 `;

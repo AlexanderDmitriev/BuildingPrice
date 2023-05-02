@@ -11,7 +11,7 @@ export const FooterList = styled.ul`
 `;
 
 export const FooterListItem = styled.li`
-  font-family: 'Inter' serif;
+  font-family: Inter serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -20,12 +20,12 @@ export const FooterListItem = styled.li`
   display: flex;
   align-items: center;
   color: #191924;
-  border-top: 1px solid #95e2e9;
+  border-top: 1px solid #418b77;
   padding-top: 24px;
   margin-bottom: 24px;
 `;
 
 export const FooterImg = styled.img`
   width: 20px;
-  margin-right: 5px;
+  margin-right: 8px;
 `;
