@@ -1,19 +1,20 @@
 import styled from 'styled-components';
-//import back1 from '../images/OBJECTS1.svg';
 import back1 from '../images/Background1.svg';
 import back2 from '../images/Background2.svg';
-//import back2 from '../images/Group30.svg';
 import back3 from '../images/Group29.svg';
 import back4 from '../images/Background3.svg';
-//import back4 from '../images/Group31.svg';
 
 export const TempContainer = styled.div`
   padding: 60px;
 `;
 export const Back1 = styled.img`
   position: absolute;
-  right: 0%;
-  top: 0%;
+  left: 0;
+  top: 0;
+  @media screen and (min-width: 480px) {
+    right: 0;
+    left: auto;
+  }
 `;
 export const Back2 = styled.img`
   position: absolute;

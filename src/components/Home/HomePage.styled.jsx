@@ -3,40 +3,63 @@ import { NavLink } from 'react-router-dom';
 import pointList from '../../images/point.svg';
 
 export const HeroSection = styled.div`
-  padding-bottom: 200px;
+  padding-bottom: 125px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 150px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 175px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+  }
 `;
 
 export const MainSlogan = styled.p`
   font-family: Inter serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 100px;
+  font-size: 36px;
   line-height: 120%;
-  /* or 120px */
-  display: flex;
-  align-items: center;
+  /* or 62px */
   text-transform: uppercase;
-  margin: 0;
   color: #191924;
   position: relative;
   z-index: 20;
   padding-top: 100px;
   padding-bottom: 24px;
-  width: 801px;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 110%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 100px;
+    line-height: 120%;
+    /* or 120px */
+  }
 `;
 
 export const CoolSlogans = styled.p`
   font-family: Inter serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 110%;
-  /* identical to box height, or 22px */
+  font-size: 14px;
+  line-height: 120%;
   margin: 0;
-  display: flex;
-  align-items: center;
   color: #191924;
   padding-bottom: 40px;
+  position: relative;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const ReadMoreButton = styled(NavLink)`
@@ -46,46 +69,36 @@ export const ReadMoreButton = styled(NavLink)`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 110%;
   /* or 26px */
-  display: flex;
-  align-items: center;
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
   color: #ffffff;
-  display: inline;
+  text-align: center;
   text-decoration: none;
+  @media screen and (min-width: 480px) {
+    max-width: 250px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline;
+    font-size: 24px;
+  }
   :hover {
     background-color: #529c88;
   }
-`;
-
-export const AboutUsTopic = styled.p`
-  font-family: Inter serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 110%;
-  /* or 22px */
-  display: flex;
-  align-items: center;
-  color: #191924;
-  padding-bottom: 24px;
-`;
-
-export const AboutUsImg = styled.img`
-  width: 50%;
-`;
-
-export const AboutUsSecton = styled.div`
-  display: flex;
-  padding-bottom: 300px;
 `;
 
 export const AboutUsTitle = styled.h2`
   font-family: Inter serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 100px;
+  font-size: 36px;
   line-height: 120%;
   /* identical to box height, or 120px */
   margin: 0;
@@ -94,6 +107,18 @@ export const AboutUsTitle = styled.h2`
   color: #191924;
   border-bottom: 1px solid #418b77;
   width: 90%;
+  @media screen and (min-width: 480px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 110%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 100px;
+    line-height: 120%;
+    /* or 120px */
+  }
   div {
     height: 24px;
     display: block;
@@ -101,6 +126,50 @@ export const AboutUsTitle = styled.h2`
   }
 `;
 
+export const AboutUsSecton = styled.div`
+  display: block;
+  padding-bottom: 200px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 250px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 275px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-bottom: 300px;
+  }
+`;
+
+export const AboutUsTopic = styled.p`
+  font-family: Inter serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  /* or 22px */
+  display: flex;
+  align-items: center;
+  color: #191924;
+  padding-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const AboutUsImg = styled.img`
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    max-width: 50%;
+  }
+`;
+////////////////////////////
 export const OffersSection = styled.div`
   padding-bottom: 300px;
   display: flex;
