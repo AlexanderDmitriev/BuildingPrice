@@ -1,4 +1,4 @@
-import { CoolSlogans } from './HomePage.styled';
+import { CoolSlogans } from './HeroSection.styled';
 
 export const GetSlogans = ({ t }) => {
   const slogans = [

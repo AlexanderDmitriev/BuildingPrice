@@ -1,15 +1,17 @@
 import {
-  MainSlogan,
-  ReadMoreButton,
-  HeroSection,
   AboutUsTitle,
   ClientsSection,
   ClienList,
   ClientListItem,
 } from '../components/Home/HomePage.styled';
+import {
+  HeroSection,
+  MainSlogan,
+  ReadMoreButton,
+} from '../components/Home/HeroSection/HeroSection.styled';
 import { AboutUs } from '../components/Home/AboutUs';
-import { Offers } from '../components/Home/Offers';
-import { GetSlogans } from '../components/Home/GetSlogans';
+import { Offers } from '../components/Home/OffersSection/Offers';
+import { GetSlogans } from '../components/Home/HeroSection/GetSlogans';
 import osbbLogo from '../images/home3.svg';
 import fopLogo from '../images/user-tie.svg';
 import { BasketLogo } from '../components/Header/Header.styled';

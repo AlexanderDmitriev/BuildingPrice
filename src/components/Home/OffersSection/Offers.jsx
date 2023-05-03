@@ -5,8 +5,8 @@ import {
   OffersTopic,
   OfferListItem,
   OffersList,
-  ReadMoreButton,
-} from './HomePage.styled';
+} from '../OffersSection/Offers.styled';
+import { ReadMoreButton } from '../HeroSection/HeroSection.styled';
 
 export const Offers = ({ t }) => {
   return (
