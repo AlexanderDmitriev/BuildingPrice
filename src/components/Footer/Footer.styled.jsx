@@ -19,8 +19,8 @@ export const FooterListItem = styled.li`
   /* identical to box height, or 22px */
   display: flex;
   align-items: center;
-  color: #191924;
-  border-top: 1px solid #418b77;
+  color: ${props => props.theme.colors.primaryTextColor};
+  border-top: 1px solid ${props => props.theme.colors.accentColor};
   padding-top: 24px;
   margin-bottom: 24px;
 `;

@@ -35,7 +35,7 @@ export const OffersTitle = styled(Title)`
 export const OffersTopic = styled(Topic)`
   display: flex;
   align-items: center;
-  color: #191924;
+  color: ${props => props.theme.colors.primaryTextColor};
   padding-bottom: 24px;
 `;
 
@@ -64,7 +64,7 @@ export const OfferListItem = styled.li`
   display: flex;
   align-items: center;
   text-align: right;
-  color: #191924;
+  color: ${props => props.theme.colors.primaryTextColor};
   @media screen and (min-width: 480px) {
     font-size: 24px;
   }
@@ -87,6 +87,7 @@ export const OfferListItem = styled.li`
     @media screen and (min-width: 480px) {
       height: 24px;
       width: 20px;
+      margin-right: 40px;
     }
   }
 `;

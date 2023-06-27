@@ -6,6 +6,7 @@ import back4 from '../images/Background3.svg';
 
 export const TempContainer = styled.div`
   padding: 60px;
+  background-color: ${props => props.theme.colors.bgColor};
 `;
 export const Back1 = styled.img`
   position: absolute;

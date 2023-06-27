@@ -25,7 +25,7 @@ export const AboutUsSecton = styled.div`
 export const AboutUsTopic = styled(Topic)`
   display: flex;
   align-items: center;
-  color: #191924;
+  color: ${props => props.theme.colors.primaryTextColor};
   padding-bottom: 24px;
 `;
 
@@ -72,10 +72,10 @@ export const ClientListItem = styled.li`
   margin-bottom: 10px;
   align-items: center;
   text-align: right;
-  border-left: 1px solid #418b77;
-  border-right: 1px solid #418b77;
+  border-left: 1px solid ${props => props.theme.colors.accentColor};
+  border-right: 1px solid ${props => props.theme.colors.accentColor};
   padding: 5px 10px;
-  color: #191924;
+  color: ${props => props.theme.colors.primaryTextColor};
   @media screen and (min-width: 480px) {
     font-size: 24px;
   }

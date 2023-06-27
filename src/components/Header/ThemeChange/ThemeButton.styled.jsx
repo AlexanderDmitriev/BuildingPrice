@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Switch from 'react-switch';
 
 export const ThemeButtonCustom = styled(Switch)`
-  border: 2px solid #418B77;
+  border: 2px solid ${props => props.theme.colors.accentColor};
   border-radius: 40px;
   /* border: none;
   background-color: transparent;
@@ -14,7 +14,7 @@ export const ThemeButtonCustom = styled(Switch)`
 
   &:hover,
   &:focus {
-    color: red;
+    color: #eb0e0e;
     box-shadow: 1px 1px 5px var(--company-color);
   } */
 `;
@@ -22,7 +22,7 @@ export const ThemeButtonCustom = styled(Switch)`
 export const Circle = styled.div`
 width: 8px;
 height: 8px;
-background-color: #fff;
+background-color: ${props => props.theme.colors.bgColor};
 border-radius: 50%;
 margin: 5px auto;
 `;

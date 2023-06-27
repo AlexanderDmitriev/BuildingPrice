@@ -13,7 +13,7 @@ export const ServicesLink = styled(NavLink)`
   font-weight: 500;
   font-size: 20px;
   line-height: 110%;
-  color: #191924;
+  color:  ${props => props.theme.colors.primaryTextColor};
   cursor: pointer;
   text-align: center;
   padding: 6px 12px;
@@ -22,6 +22,6 @@ export const ServicesLink = styled(NavLink)`
   transition-timing-function: linear;
   &:hover,
   &:focus {
-    color: green;
+    color: ${props => props.theme.colors.focusColor};
   }
 `;

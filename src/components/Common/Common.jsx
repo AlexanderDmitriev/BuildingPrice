@@ -8,12 +8,12 @@ export const Title = styled.h2`
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
-  color: #191924;
-  border-bottom: 1px solid #418b77;
+  color: ${props => props.theme.colors.primaryTextColor};
+  border-bottom: 1px solid ${props => props.theme.colors.accentColor};
   div {
     height: 24px;
     display: block;
-    border-top: 1px solid #418b77;
+    border-top: 1px solid ${props => props.theme.colors.accentColor};
   }
   @media screen and (min-width: 480px) {
     font-size: 48px;

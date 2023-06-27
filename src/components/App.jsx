@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { /* theme, */ light /* dark */ } from './theme';
+import { /* theme, */ light, dark } from './theme';
 import { GlobalStyles } from './global';
 import React, {
   useState,
@@ -25,7 +25,9 @@ import { useSelector } from 'react-redux';
 
 export const App = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(
+    JSON.parse(window.localStorage.getItem('darkTheme')) ?? false
+  );
   const [currentTheme, setCurrentTheme] = useState('light');
   const { t, i18n } = useTranslation();
 
@@ -36,8 +38,12 @@ export const App = () => {
     window.localStorage.setItem('locale', JSON.stringify(currentLocale));
   }, [currentLocale]);
 
+  useEffect(() => {
+    window.localStorage.setItem('darkTheme', JSON.stringify(isDarkTheme));
+  }, [isDarkTheme]);
+
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={ isDarkTheme ? dark : light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
         <Header

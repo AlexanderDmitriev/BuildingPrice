@@ -25,13 +25,13 @@ export const MainSlogan = styled(Title)`
 
 export const CoolSlogans = styled(Topic)`
   margin: 0;
-  color: #191924;
+  color: ${props => props.theme.colors.primaryTextColor};
   padding-bottom: 40px;
   position: relative;
 `;
 
 export const ReadMoreButton = styled(NavLink)`
-  background-color: #418b77;
+  background-color: ${props => props.theme.colors.accentColor};
   padding: 16px 32px;
   border-radius: 8px;
   font-family: 'Inter';
@@ -43,7 +43,7 @@ export const ReadMoreButton = styled(NavLink)`
   display: block;
   max-width: 200px;
   margin: 0 auto;
-  color: #ffffff;
+  color: ${props => props.theme.colors.bgColor};
   text-align: center;
   text-decoration: none;
   @media screen and (min-width: 480px) {
@@ -58,6 +58,6 @@ export const ReadMoreButton = styled(NavLink)`
     font-size: 24px;
   }
   :hover {
-    background-color: #529c88;
+    background-color: ${props => props.theme.colors.focusColor};
   }
 `;

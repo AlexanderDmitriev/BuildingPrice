@@ -9,7 +9,7 @@ export const HeaderSection = styled.header`
   left: 15px;
   width: 95%;
   z-index: 200;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.bgColor};
 `;
 
 export const HeaderBody = styled.div`
@@ -40,10 +40,11 @@ export const AdditionalNavigation = styled.ul`
 
 export const Logo = styled.img`
   height: 65px;
+  border-radius: 40px;
 `;
 export const BasketLogo = styled.img`
   height: 24px;
-  color: green;
+  color: ${props => props.theme.colors.accentColor};
 `;
 
 export const BasketLink = styled(NavLink)``;
@@ -67,18 +68,18 @@ export const SelectLanguege = styled(Select)`
     font-size: 20px;
     line-height: 110%;
     align-items: center;
-    color: #191924;
+    color: ${props => props.theme.colors.primaryTextColor};
     cursor: pointer;
   }
   .css-1u9des2-indicatorSeparator {
     width: 0;
   }
   .css-1jqq78o-placeholder {
-    color: #191924;
+    color: ${props => props.theme.colors.primaryTextColor};
   }
   .css-1xc3v61-indicatorContainer,
   .css-15lsz6c-indicatorContainer {
-    color: #191924;
+    color: ${props => props.theme.colors.primaryTextColor};
     padding: 0;
   }
   .css-1fdsijx-ValueContainer {

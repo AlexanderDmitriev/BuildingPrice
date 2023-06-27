@@ -12,7 +12,7 @@ import React, { useEffect, useRef } from 'react';
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 /* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
 import { NavLink } from 'react-router-dom';
-import logo2 from '../../images/sargonikaUaLogo.jpg';
+import logo2 from '../../images/sargonikaUaLogoV2.jpg';
 import { OtherNavigation } from './Navigation/OtherNavigation';
 
 const Header = ({
@@ -31,11 +31,11 @@ const Header = ({
 
   const handleChangeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-    /* console.log(isDarkTheme); */
+    console.log(currentTheme);
   };
   useEffect(() => {
     isDarkTheme ? setCurrentTheme('dark') : setCurrentTheme('light');
-    /* console.log(currentTheme); */
+    //console.log(currentTheme);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDarkTheme]);
 
