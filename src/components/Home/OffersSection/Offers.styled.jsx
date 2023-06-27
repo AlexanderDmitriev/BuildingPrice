@@ -81,6 +81,8 @@ export const OfferListItem = styled.li`
     margin-right: 40px;
     height: 20px;
     width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url(${pointList});
     @media screen and (min-width: 480px) {
       height: 24px;
