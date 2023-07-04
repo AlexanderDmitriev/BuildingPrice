@@ -5,9 +5,7 @@ import { NavLink } from 'react-router-dom';
 export const HeaderSection = styled.header`
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 15px;
-  width: 95%;
+  top: 0; 
   z-index: 200;
   background-color: ${props => props.theme.colors.bgColor};
 `;
@@ -24,7 +22,7 @@ export const HeaderBody = styled.div`
 export const HeaderContainer = styled.div`
   /* max-width: 1400px; */
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px;
   /* box-shadow: 0px 5px 3px rgba(9, 30, 63, 0.1); */
 `;
 
@@ -45,6 +43,11 @@ export const Logo = styled.img`
 export const BasketLogo = styled.img`
   height: 24px;
   color: ${props => props.theme.colors.accentColor};
+`;
+
+export const BasketLogo2 = styled.svg`
+  height: 24px;
+  fill: ${props => props.theme.colors.accentColor};
 `;
 
 export const BasketLink = styled(NavLink)``;
@@ -69,6 +72,7 @@ export const SelectLanguege = styled(Select)`
     line-height: 110%;
     align-items: center;
     color: ${props => props.theme.colors.primaryTextColor};
+    background-color: ${props => props.theme.colors.bgColor};
     cursor: pointer;
   }
   .css-1u9des2-indicatorSeparator {
@@ -84,5 +88,12 @@ export const SelectLanguege = styled(Select)`
   }
   .css-1fdsijx-ValueContainer {
     padding: 0;
+  }
+  .css-1dimb5e-singleValue {
+    color: ${props => props.theme.colors.primaryTextColor};
+  }
+  .css-1nmdiq5-menu {
+    color: ${props => props.theme.colors.primaryTextColor};
+    background-color: ${props => props.theme.colors.bgColor};
   }
 `;

@@ -43,34 +43,36 @@ export const App = () => {
   }, [isDarkTheme]);
 
   return (
-    <ThemeProvider theme={ isDarkTheme ? dark : light}>
+    <ThemeProvider theme={isDarkTheme ? dark : light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
-        <Header
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          isDarkTheme={isDarkTheme}
-          setIsDarkTheme={setIsDarkTheme}
-          currentTheme={currentTheme}
-          setCurrentTheme={setCurrentTheme}
-          t={t}
-          i18n={i18n}
-        />
-        <Container>
-          <div>
-            <Routes>
-              <Route path="/" element={<HomePage t={t} />} />
-              <Route path="/fop" element={<Services />} />
-              <Route path="/ooo" element={<Services />} />
-              <Route path="/questions" element={<MakeQuestionPage />} />
-              <Route path="/team" element={<OurTeamPage />} />
-              <Route path="/basket" element={<Basket />} />
-              <Route path="/*" element={<NotFoundPage />} />
-            </Routes>
-          </div>
+        <div>
+          <Header
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            isDarkTheme={isDarkTheme}
+            setIsDarkTheme={setIsDarkTheme}
+            currentTheme={currentTheme}
+            setCurrentTheme={setCurrentTheme}
+            t={t}
+            i18n={i18n}
+          />
+          <Container>
+            <div>
+              <Routes>
+                <Route path="/" element={<HomePage t={t} />} />
+                <Route path="/fop" element={<Services />} />
+                <Route path="/ooo" element={<Services />} />
+                <Route path="/questions" element={<MakeQuestionPage />} />
+                <Route path="/team" element={<OurTeamPage />} />
+                <Route path="/basket" element={<Basket />} />
+                <Route path="/*" element={<NotFoundPage />} />
+              </Routes>
+            </div>
 
-          <Footer />
-        </Container>
+            <Footer />
+          </Container>
+        </div>
       </Suspense>
     </ThemeProvider>
   );

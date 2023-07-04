@@ -1,5 +1,5 @@
 import ThemeButton from '../ThemeChange/ThemeButton';
-import { AdditionalNavigation, BasketLogo, BasketLink } from '../Header.styled';
+import { AdditionalNavigation, BasketLogo,BasketLogo2, BasketLink } from '../Header.styled';
 import { LanguegeButton } from '../LanguegeButton';
 import React from 'react';
 /* import basketLogo from '../../../images/cart.svg'; */
@@ -24,6 +24,9 @@ export const OtherNavigation = ({ isDarkTheme, handleChangeTheme,i18n }) => {
                     <use src={basketLogo}></use>
                   </BasketLogo> */}
             <BasketLogo src={basketLogo2} alt="basket" />
+            {/* <BasketLogo2 height="47">
+            <use href={basketLogo2}></use>
+            </BasketLogo2> */}
           </span>
         </BasketLink>
       </li>

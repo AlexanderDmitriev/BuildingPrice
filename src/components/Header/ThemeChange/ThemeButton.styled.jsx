@@ -20,9 +20,9 @@ export const ThemeButtonCustom = styled(Switch)`
 `;
 
 export const Circle = styled.div`
-width: 8px;
-height: 8px;
-background-color: ${props => props.theme.colors.bgColor};
-border-radius: 50%;
-margin: 5px auto;
+  width: 8px;
+  height: 8px;
+  background-color: ${props => props.theme.colors.bgColor};
+  border-radius: 50%;
+  margin: 5px auto;
 `;

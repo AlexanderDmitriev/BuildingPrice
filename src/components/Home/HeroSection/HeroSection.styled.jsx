@@ -27,6 +27,7 @@ export const CoolSlogans = styled(Topic)`
   margin: 0;
   color: ${props => props.theme.colors.primaryTextColor};
   padding-bottom: 40px;
+  padding-top: 10px;
   position: relative;
 `;
 
@@ -43,7 +44,7 @@ export const ReadMoreButton = styled(NavLink)`
   display: block;
   max-width: 200px;
   margin: 0 auto;
-  color: ${props => props.theme.colors.bgColor};
+  color: ${props => props.theme.colors.primaryTextColor};
   text-align: center;
   text-decoration: none;
   @media screen and (min-width: 480px) {
