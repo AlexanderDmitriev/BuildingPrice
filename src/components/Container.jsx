@@ -8,6 +8,11 @@ export const TempContainer = styled.div`
   padding: 60px;
   background-color: ${props => props.theme.colors.bgColor};
 `;
+
+export const MainContainer = styled.div`
+  width: 100vw;
+`;
+
 export const Back1 = styled.img`
   position: absolute;
   left: 0;

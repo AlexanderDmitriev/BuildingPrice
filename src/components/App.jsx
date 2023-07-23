@@ -16,7 +16,7 @@ import { MakeQuestionPage } from '../pages/MakeQuestionPage';
 import { OurTeamPage } from '../pages/OurTeamPage';
 import { Basket } from '../pages/Basket';
 import { NotFoundPage } from '../pages/NotFoundPage';
-import { Container } from './Container';
+import { Container,MainContainer } from './Container';
 /* const Header = lazy(() => import('./Header/Header')); */
 /* const HomePage = lazy(() => import('../pages/HomePage')); */
 import { useTranslation } from 'react-i18next';
@@ -46,7 +46,7 @@ export const App = () => {
     <ThemeProvider theme={isDarkTheme ? dark : light}>
       <GlobalStyles />
       <Suspense fallback={<div>Loading...</div>}>
-        <div>
+        <MainContainer>
           <Header
             isOpen={isOpen}
             setIsOpen={setIsOpen}
@@ -72,7 +72,7 @@ export const App = () => {
 
             <Footer />
           </Container>
-        </div>
+        </MainContainer>
       </Suspense>
     </ThemeProvider>
   );

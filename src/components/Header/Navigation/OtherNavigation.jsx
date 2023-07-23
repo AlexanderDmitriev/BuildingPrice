@@ -1,5 +1,5 @@
 import ThemeButton from '../ThemeChange/ThemeButton';
-import { AdditionalNavigation, BasketLogo,BasketLogo2, BasketLink } from '../Header.styled';
+import { AdditionalNavigation, BasketLogo,/* BasketLogo2, */ BasketLink } from '../Header.styled';
 import { LanguegeButton } from '../LanguegeButton';
 import React from 'react';
 /* import basketLogo from '../../../images/cart.svg'; */
