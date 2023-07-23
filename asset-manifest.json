@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BuildingPrice/static/css/main.7acaea2f.css",
-    "main.js": "/BuildingPrice/static/js/main.51b3a75c.js",
+    "main.js": "/BuildingPrice/static/js/main.b25b6c3a.js",
     "static/media/moneyTree.png": "/BuildingPrice/static/media/moneyTree.039d3232b9465bcc51bb.png",
     "static/media/sargonikaUaLogoV2.jpg": "/BuildingPrice/static/media/sargonikaUaLogoV2.1a019133bb7bc7635205.jpg",
     "static/media/Background2.svg": "/BuildingPrice/static/media/Background2.102b395bb2331171fe4a904a6d738f4d.svg",
@@ -12,7 +12,7 @@
     "static/media/instagram.svg": "/BuildingPrice/static/media/instagram.9bd6921d0e6f682ef39494609d13cb9e.svg",
     "static/media/whatsapp.svg": "/BuildingPrice/static/media/whatsapp.6ca0cabb41bf534ce43bc9eb6e212cf6.svg",
     "index.html": "/BuildingPrice/index.html",
-    "static/media/basket2.svg": "/BuildingPrice/static/media/basket2.1da2e9edbe29a93fddd7935db75ed544.svg",
+    "static/media/basket2.svg": "/BuildingPrice/static/media/basket2.8ef025fb93940a59529a08ee5b69aa3b.svg",
     "static/media/telegram.svg": "/BuildingPrice/static/media/telegram.d27e5a670d926587f52b9f7a6009ef66.svg",
     "static/media/user-tie.svg": "/BuildingPrice/static/media/user-tie.e2e339ce164a191551be994b8bc8b330.svg",
     "static/media/getFetch.cjs": "/BuildingPrice/static/media/getFetch.40f37ddea2378391108f.cjs",
@@ -20,10 +20,10 @@
     "static/media/point.svg": "/BuildingPrice/static/media/point.5650f9dadaae3355ea3375f2d3d3286a.svg",
     "static/media/home3.svg": "/BuildingPrice/static/media/home3.22a66bb0c0264006ae2407dab0a3bad6.svg",
     "main.7acaea2f.css.map": "/BuildingPrice/static/css/main.7acaea2f.css.map",
-    "main.51b3a75c.js.map": "/BuildingPrice/static/js/main.51b3a75c.js.map"
+    "main.b25b6c3a.js.map": "/BuildingPrice/static/js/main.b25b6c3a.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.51b3a75c.js"
+    "static/js/main.b25b6c3a.js"
   ]
 }
