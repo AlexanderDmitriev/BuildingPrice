@@ -7,7 +7,7 @@ export const theme = {
 
 export const light = {
   colors: {
-    bgColor: '#fff',
+    bgColor: '#FBFCFE',
     primaryTextColor: '#191924',
     accentColor: '#418b77',
     focusColor:'#95E2E9',

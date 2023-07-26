@@ -16,8 +16,8 @@ const ThemeButton = ({ isDarkTheme, handleChangeTheme }) => {
         <ThemeButtonCustom
           onChange={handleChangeTheme}
           checked={isDarkTheme}
-          offColor={`${props => props.theme.colors.bgColor}`}
-          onColor={`${props => props.theme.colors.bgColor}`}
+          offColor={`#FBFCFE`}
+          onColor={`#191924`}
           onHandleColor={`#FBFCFE`}
           offHandleColor={`#191924`}
           checkedIcon={false}
