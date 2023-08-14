@@ -5,8 +5,8 @@ import {
   HeaderContainer,
   Logo,
 } from './Header.styled';
-/* import Burger from './Navigation/Burger/Burger';
-import Menu from './Navigation/Menu/Menu'; */
+import Burger from './Navigation/Burger/Burger';
+import Menu from './Navigation/Menu/Menu';
 import React, { useEffect, useRef } from 'react';
 /* import { useMediaQuery } from 'react-responsive'; */
 import { useOnClickOutside } from './Navigation/Burger/hooks';
