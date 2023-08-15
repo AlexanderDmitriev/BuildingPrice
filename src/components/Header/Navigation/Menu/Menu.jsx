@@ -3,10 +3,10 @@ import { StyledMenu } from './Menu.styled';
 import Navigation from '../NavigationSection';
 import { bool } from 'prop-types';
 
-const Menu = ({ open }) => {
+const Menu = ({ open, t }) => {
   return (
     <StyledMenu open={open}>
-      <Navigation/>
+      <Navigation t={t}/>
     </StyledMenu>
   );
 };

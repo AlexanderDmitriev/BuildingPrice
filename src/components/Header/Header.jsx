@@ -8,7 +8,7 @@ import {
 import Burger from './Navigation/Burger/Burger';
 import Menu from './Navigation/Menu/Menu';
 import React, { useEffect, useRef } from 'react';
-/* import { useMediaQuery } from 'react-responsive'; */
+import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from './Navigation/Burger/hooks';
 /* import sargonikaLogo from '../../images/SargonikaLogoUa.jpg'; */
 import { NavLink } from 'react-router-dom';
@@ -22,9 +22,10 @@ const Header = ({
   setIsDarkTheme,
   currentTheme,
   setCurrentTheme,
-  t, i18n,
+  t,
+  i18n,
 }) => {
-  /* const isTab = useMediaQuery({ query: '(min-width: 768px)' }); */
+  const isTab = useMediaQuery({ query: '(max-width: 768px)' });
 
   const node = useRef();
   useOnClickOutside(node, () => setIsOpen(false));
@@ -48,23 +49,23 @@ const Header = ({
               <Logo src={logo2} alt="sargonika-ukraine" />
             </span>
           </NavLink>
-          <Navigation  t={t}/>
-          <OtherNavigation
+
+          {isTab ? (
+            <section ref={node}>
+              <Burger open={isOpen} setOpen={setIsOpen} />
+              <Menu open={isOpen} setOpen={setIsOpen} t={t} />
+            </section>
+          ) : (
+            <Navigation t={t} />
+          )}
+
+          {<OtherNavigation
             isDarkTheme={isDarkTheme}
             handleChangeTheme={handleChangeTheme}
             i18n={i18n}
-          />
+          />}
         </HeaderBody>
       </HeaderContainer>
-      {/* 
-        <>
-          <LanguegeButton />
-          <div ref={node}>
-            <Burger open={isOpen} setOpen={setIsOpen} />
-            <Menu open={isOpen} setOpen={setIsOpen} />
-          </div>
-        </>
-      )}*/}
     </HeaderSection>
   );
 };
